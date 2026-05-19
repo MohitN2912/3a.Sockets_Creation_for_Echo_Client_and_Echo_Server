@@ -9,7 +9,7 @@ Sockets Links.
  server .
 4. Send and receive the message using the send function in socket.
 ## PROGRAM
-
+```
 Client side:
 
 import socket
@@ -30,12 +30,15 @@ c,addr=s.accept()
 while True:
  ClientMessage=c.recv(1024).decode()
  c.send(ClientMessage.encode())
-
+```
 
 ## OUTPUT
 Client side:
+
 <img width="881" height="287" alt="Screenshot 2026-05-19 112620" src="https://github.com/user-attachments/assets/b12c45c2-bb8b-4ccd-bc93-c392c1278ddf" />
+
 Server side:
+
 <img width="847" height="257" alt="Screenshot 2026-05-19 112722" src="https://github.com/user-attachments/assets/7aa4d3c1-6792-4f98-bec8-84855ec30bc8" />
 
 
